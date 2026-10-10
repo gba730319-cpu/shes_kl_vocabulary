@@ -1,759 +1,552 @@
 <!DOCTYPE html>
-<html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>G4 Advanced M11/M12 單字</title>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生活英文單字學習</title>
+
 <style>
-:root{--bg:#f3f6f4;--card:#fff;--ink:#16302a;--mute:#5d746c;--ac:#2f7d4f;--ac2:#d8ecdf;--line:#cfdcd5}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Noto Sans TC",system-ui,sans-serif}
-header{position:sticky;top:0;z-index:5;background:var(--ink);color:#fff;padding:12px 16px}
-h1{margin:0 0 8px;font-size:1.15rem}
-.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.bar label,.bar select,.bar input[type=search]{font-size:.9rem}
-.seg{display:inline-flex;border:1px solid #6f9a86;border-radius:8px;overflow:hidden}
-.seg button{background:transparent;color:#fff;border:0;padding:6px 12px;cursor:pointer;font-size:.9rem}
-.seg button[aria-pressed=true]{background:var(--ac);font-weight:700}
-.tg{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
-select,input[type=search],input[type=number]{padding:6px 8px;border-radius:8px;border:1px solid #6f9a86;background:#fff;color:var(--ink)}
-main{max-width:1000px;margin:0 auto;padding:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
-.card{all:unset;box-sizing:border-box;cursor:pointer;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ac);border-radius:6px;padding:10px 12px;display:block}
-.card:hover{background:var(--ac2)}
-.card:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
-.card.on{background:var(--ac2);border-color:var(--ac)}
-.n{float:right;color:var(--mute);font-size:.75rem}
-.w{font-size:1.35rem;font-weight:700}
-.p{color:var(--mute);font-size:.8rem;margin-left:4px;font-weight:400}
-.k{color:var(--ac);font-size:.95rem;min-height:1.4em;font-family:"Noto Sans","Segoe UI",sans-serif}
-.z{font-size:1rem;margin-top:2px}
-.s{margin-top:6px;padding-top:6px;border-top:1px dashed var(--line);font-size:.9rem;line-height:1.4;color:var(--mute);font-family:"Noto Sans","Segoe UI",sans-serif}.s:hover{color:var(--ac)}body.nose .s{display:none}.sz{display:block;margin-top:2px;color:var(--ink)}body.nozh .sz{display:none}
-body.nokk .k{display:none}body.nozh .z{display:none}
-#msg{max-width:1000px;margin:0 auto;padding:0 16px;color:var(--mute);font-size:.85rem}
-.cw{position:relative;display:flex}
-.cw .card{flex:1;min-width:0;min-height:112px;overflow-wrap:anywhere}
-.ck{position:absolute;right:6px;bottom:6px;padding:6px;cursor:pointer;line-height:0}
-.ck input{width:20px;height:20px;accent-color:var(--ac);cursor:pointer}
-.cw .card{padding-bottom:12px}
-.ex{background:#fff;color:var(--ink);border:0;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:.9rem}
-.ex.go{background:var(--ac);color:#fff;font-weight:700}
-#pv{display:none}
-@media print{header,main,#msg{display:none!important}body{background:#fff}#pv{display:block;padding:0}
-#pv h2{font-size:16pt;margin:0 0 4pt}#pv p{margin:0 0 8pt;color:#555;font-size:9pt}
-#pv table{width:100%;border-collapse:collapse;font-size:11pt}
-#pv th,#pv td{border:1px solid #999;padding:4pt 6pt;text-align:left}
-#pv th{background:#d8ecdf}#pv tr{break-inside:avoid}#pv .kk{font-family:"Noto Sans","Segoe UI",sans-serif}
-@page{margin:14mm}}
-.pvh{position:fixed;left:-10000px;top:0}
-.pg{position:relative;width:794px;height:1123px;box-sizing:border-box;padding:40px;background:#fff;color:#16302a;overflow:hidden;font:14px/1.45 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
-.pg h2{font-size:21px;margin:0 0 4px}.pg p{margin:0 0 10px;color:#555;font-size:12px}
-.pg table{width:100%;border-collapse:collapse}.pg th,.pg td{border:1px solid #999;padding:5px 7px;text-align:left;vertical-align:top}
-.pg th{background:#d8ecdf}.pg .kk{font-family:"Noto Sans","Segoe UI",sans-serif}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans TC", sans-serif;
+  background: #f3f6fc;
+  color: #263247;
+}
+
+header {
+  background: linear-gradient(135deg, #2457a7, #5796e8);
+  color: white;
+  padding: 28px 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 22px auto;
+  padding: 0 14px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+input, select, button {
+  font: inherit;
+  border-radius: 10px;
+  padding: 11px 13px;
+}
+
+input, select {
+  border: 1px solid #ccd6e5;
+  background: white;
+}
+
+input {
+  flex: 1;
+  min-width: 200px;
+}
+
+button {
+  border: none;
+  background: #2457a7;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.summary {
+  margin: 12px 0;
+  color: #64748b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #dce4f0;
+  border-radius: 16px;
+  padding: 17px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.number {
+  color: #7b8798;
+  font-size: 13px;
+}
+
+.word {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2457a7;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+
+.chinese {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.meta {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 13px;
+  overflow-wrap: anywhere;
+}
+
+.example {
+  border-top: 1px solid #e7edf5;
+  padding-top: 12px;
+  line-height: 1.6;
+}
+
+.example-en {
+  font-weight: bold;
+}
+
+.example-zh {
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.actions button {
+  flex: 1;
+  min-width: 100px;
+  font-size: 14px;
+}
+
+.secondary {
+  background: #e8effb;
+  color: #2457a7;
+}
+
+.hidden {
+  display: none;
+}
+
+.empty {
+  padding: 30px;
+  text-align: center;
+  color: #64748b;
+}
+
+footer {
+  text-align: center;
+  color: #7b8798;
+  padding: 25px 10px;
+  font-size: 13px;
+}
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-</head><body class="nozh nose">
-<header><h1>G4 Advanced M11/M12 單字（點一下聽發音）</h1>
-<div class="bar">
-<span class="seg" role="group" aria-label="口音"><button id="us" aria-pressed="true">美式</button><button id="uk" aria-pressed="false">英式</button></span>
-<label class="tg"><input type="checkbox" id="zh"> 中文</label>
-<label class="tg"><input type="checkbox" id="kk" checked> KK音標</label>
-<label class="tg"><input type="checkbox" id="se"> 例句</label>
-<label>語速 <select id="sp"><option value=".6">慢</option><option value=".85" selected>正常</option><option value="1">快</option></select></label>
-<select id="rg" aria-label="範圍"></select>
-<input type="search" id="q" placeholder="搜尋單字或中文">
-<button class="ex" id="sa">全選目前範圍</button><button class="ex" id="sall">全選 1–200</button><button class="ex" id="sc">清除選取</button>
-<span class="tg">自訂範圍 <input type="number" id="ra" min="1" max="200" placeholder="起" aria-label="起始編號" style="width:70px"> 到 <input type="number" id="rb" min="1" max="200" placeholder="迄" aria-label="結束編號" style="width:70px"><button class="ex" id="radd">加入選取</button><button class="ex" id="rdel">取消選取</button></span>
-<label class="tg"><input type="checkbox" id="pz" checked> PDF含中文</label>
-<label class="tg"><input type="checkbox" id="ps" checked> PDF含例句</label>
-<button class="ex go" id="pd">匯出PDF（0）</button>
-</div></header>
-<div id="msg"></div>
-<main id="list"></main>
-<div id="pv"></div>
+</head>
+
+<body>
+
+<header>
+  <h1>📘 生活英文單字學習</h1>
+  <p>每天學一點英文，讓生活更有趣！</p>
+</header>
+
+<main>
+
+  <section class="controls">
+    <input
+      id="search"
+      type="search"
+      placeholder="搜尋中文或英文，例如：起床、get up"
+    >
+
+    <select id="category">
+      <option value="">全部主題</option>
+      <option value="日常作息">日常作息</option>
+      <option value="時間">時間</option>
+      <option value="個人清潔">個人清潔</option>
+      <option value="吃飯">吃飯</option>
+      <option value="上學學習">上學學習</option>
+      <option value="家庭休閒">家庭休閒</option>
+    </select>
+
+    <button id="reset" class="secondary">顯示全部</button>
+  </section>
+
+  <div class="summary" id="summary"></div>
+
+  <section class="grid" id="wordList"></section>
+
+  <div id="empty" class="empty hidden">
+    找不到符合條件的單字，請試試其他關鍵字。
+  </div>
+
+</main>
+
+<footer>
+  生活英文單字學習網站｜英文發音使用瀏覽器語音功能
+</footer>
 
 <script>
-/* 語音包：單字整包 (us-words.js/uk-words.js) + 例句逐句動態載入 (audio/us|uk/sNNN.mp3) */
-window.AUD={};window.AUD_READY={};
-const AUDFAIL=new Set();let A=null;
-let curText=null,playing=false;
-const SENT_CACHE=new Map(),SENT_FETCHING=new Set();
-try{if(navigator.audioSession)navigator.audioSession.type="playback"}catch(e){}
-function hookAudio(a,el,tk,t){
- try{a.playbackRate=+$("sp").value||1}catch(e){}
- curText=t;playing=true;A=a;
- a.onended=()=>{if(tk===seq){el.classList.remove("on");if(curText===t){playing=false;A=null}}};
- a.onerror=()=>{if(tk===seq&&curText===t){playing=false;A=null}};
- const p=a.play();
- if(p&&p.catch)p.catch(()=>{if(tk!==seq)return;AUDFAIL.add(t);playing=false;A=null;say(t,el,0,tk)});
-}
-function playClip(t,el,tk){
- const AU=window.AUD||{};
- const k=acc==="en-GB"?"uk":"us";
- const d=(AU[k]||{})[t];
- try{speechSynthesis.cancel()}catch(e){}
- if(A){try{A.pause()}catch(e){}A=null}
- if(cur&&cur!==el)cur.classList.remove("on");cur=el;el.classList.add("on");
- if(d&&!AUDFAIL.has(t)){hookAudio(new Audio("data:audio/mpeg;base64,"+d),el,tk,t);return true}
- if(AUDFAIL.has(t))return false;
- const idx=((window.SENT_IDX||{})[k]||{})[t];
- if(idx){
-  const ck=k+":"+t,cached=SENT_CACHE.get(ck);
-  if(cached){hookAudio(new Audio(cached),el,tk,t);return true}
-  if(!SENT_FETCHING.has(ck)){
-   SENT_FETCHING.add(ck);
-   fetch("audio/"+k+"/"+idx+".mp3").then(r=>{if(!r.ok)throw 0;return r.blob()}).then(b=>{
-    SENT_CACHE.set(ck,URL.createObjectURL(b));SENT_FETCHING.delete(ck);
-   }).catch(()=>{SENT_FETCHING.delete(ck);AUDFAIL.add(t)});
+const WORDS = [
+  {
+    en:"take a bath", zh:"洗澡", pos:"片語",
+    kk:"/teɪk ə bæθ/", cat:"個人清潔",
+    ex:"I take a bath at night.",
+    exzh:"我晚上洗澡。"
+  },
+  {
+    en:"go to bed", zh:"去睡覺", pos:"片語",
+    kk:"/ɡoʊ tə bɛd/", cat:"日常作息",
+    ex:"I go to bed at nine o'clock.",
+    exzh:"我九點鐘去睡覺。"
+  },
+  {
+    en:"get up", zh:"起床", pos:"片語",
+    kk:"/ɡɛt ʌp/", cat:"日常作息",
+    ex:"I get up at seven.",
+    exzh:"我七點起床。"
+  },
+  {
+    en:"o'clock", zh:"……點鐘", pos:"副詞",
+    kk:"/əˈklɑk/", cat:"時間",
+    ex:"It is eight o'clock.",
+    exzh:"現在是八點鐘。"
+  },
+  {
+    en:"wake up", zh:"醒來", pos:"片語",
+    kk:"/weɪk ʌp/", cat:"日常作息",
+    ex:"I wake up early.",
+    exzh:"我很早醒來。"
+  },
+  {
+    en:"brush my teeth", zh:"刷牙", pos:"片語",
+    kk:"/brʌʃ maɪ tiθ/", cat:"個人清潔",
+    ex:"I brush my teeth every morning.",
+    exzh:"我每天早上刷牙。"
+  },
+  {
+    en:"wash my face", zh:"洗臉", pos:"片語",
+    kk:"/wɑʃ maɪ feɪs/", cat:"個人清潔",
+    ex:"I wash my face in the morning.",
+    exzh:"我早上洗臉。"
+  },
+  {
+    en:"get dressed", zh:"穿衣服", pos:"片語",
+    kk:"/ɡɛt drɛst/", cat:"日常作息",
+    ex:"I get dressed after I get up.",
+    exzh:"我起床後穿衣服。"
+  },
+  {
+    en:"comb my hair", zh:"梳頭髮", pos:"片語",
+    kk:"/koʊm maɪ hɛr/", cat:"個人清潔",
+    ex:"I comb my hair.",
+    exzh:"我梳頭髮。"
+  },
+  {
+    en:"eat breakfast", zh:"吃早餐", pos:"片語",
+    kk:"/it ˈbrɛkfəst/", cat:"吃飯",
+    ex:"I eat breakfast at home.",
+    exzh:"我在家吃早餐。"
+  },
+  {
+    en:"eat lunch", zh:"吃午餐", pos:"片語",
+    kk:"/it lʌntʃ/", cat:"吃飯",
+    ex:"We eat lunch at school.",
+    exzh:"我們在學校吃午餐。"
+  },
+  {
+    en:"eat dinner", zh:"吃晚餐", pos:"片語",
+    kk:"/it ˈdɪnər/", cat:"吃飯",
+    ex:"We eat dinner together.",
+    exzh:"我們一起吃晚餐。"
+  },
+  {
+    en:"drink water", zh:"喝水", pos:"片語",
+    kk:"/drɪŋk ˈwɔtər/", cat:"吃飯",
+    ex:"Please drink some water.",
+    exzh:"請喝一點水。"
+  },
+  {
+    en:"be hungry", zh:"肚子餓", pos:"片語",
+    kk:"/bi ˈhʌŋɡri/", cat:"吃飯",
+    ex:"I am hungry.",
+    exzh:"我肚子餓了。"
+  },
+  {
+    en:"be thirsty", zh:"口渴", pos:"片語",
+    kk:"/bi ˈθɜrsti/", cat:"吃飯",
+    ex:"I am thirsty.",
+    exzh:"我口渴了。"
+  },
+  {
+    en:"go to school", zh:"去上學", pos:"片語",
+    kk:"/ɡoʊ tə skul/", cat:"上學學習",
+    ex:"I go to school by bus.",
+    exzh:"我搭公車去上學。"
+  },
+  {
+    en:"come home", zh:"回家", pos:"片語",
+    kk:"/kʌm hoʊm/", cat:"日常作息",
+    ex:"I come home at four.",
+    exzh:"我四點回家。"
+  },
+  {
+    en:"do my homework", zh:"寫功課", pos:"片語",
+    kk:"/du maɪ ˈhoʊmˌwɜrk/", cat:"上學學習",
+    ex:"I do my homework after school.",
+    exzh:"我放學後寫功課。"
+  },
+  {
+    en:"read a book", zh:"看書", pos:"片語",
+    kk:"/rid ə bʊk/", cat:"上學學習",
+    ex:"I read a book every day.",
+    exzh:"我每天看書。"
+  },
+  {
+    en:"write", zh:"寫", pos:"動詞",
+    kk:"/raɪt/", cat:"上學學習",
+    ex:"I write my name.",
+    exzh:"我寫自己的名字。"
+  },
+  {
+    en:"read", zh:"閱讀", pos:"動詞",
+    kk:"/rid/", cat:"上學學習",
+    ex:"I read English books.",
+    exzh:"我讀英文書。"
+  },
+  {
+    en:"listen", zh:"聽", pos:"動詞",
+    kk:"/ˈlɪsən/", cat:"上學學習",
+    ex:"Listen to the teacher.",
+    exzh:"聽老師說話。"
+  },
+  {
+    en:"ask a question", zh:"問問題", pos:"片語",
+    kk:"/æsk ə ˈkwɛstʃən/", cat:"上學學習",
+    ex:"May I ask a question?",
+    exzh:"我可以問一個問題嗎？"
+  },
+  {
+    en:"play", zh:"玩；打球", pos:"動詞",
+    kk:"/pleɪ/", cat:"家庭休閒",
+    ex:"I play with my friends.",
+    exzh:"我和朋友一起玩。"
+  },
+  {
+    en:"watch TV", zh:"看電視", pos:"片語",
+    kk:"/wɑtʃ ˌti ˈvi/", cat:"家庭休閒",
+    ex:"I watch TV after dinner.",
+    exzh:"我晚餐後看電視。"
+  },
+  {
+    en:"play a game", zh:"玩遊戲", pos:"片語",
+    kk:"/pleɪ ə ɡeɪm/", cat:"家庭休閒",
+    ex:"Let's play a game.",
+    exzh:"我們來玩遊戲吧。"
+  },
+  {
+    en:"help my family", zh:"幫助家人", pos:"片語",
+    kk:"/hɛlp maɪ ˈfæməli/", cat:"家庭休閒",
+    ex:"I help my family at home.",
+    exzh:"我在家幫助家人。"
+  },
+  {
+    en:"clean my room", zh:"打掃房間", pos:"片語",
+    kk:"/klin maɪ rum/", cat:"家庭休閒",
+    ex:"I clean my room on Sunday.",
+    exzh:"我星期日打掃房間。"
+  },
+  {
+    en:"take a shower", zh:"淋浴；沖澡", pos:"片語",
+    kk:"/teɪk ə ˈʃaʊər/", cat:"個人清潔",
+    ex:"I take a shower after sports.",
+    exzh:"運動後我會沖澡。"
+  },
+  {
+    en:"wash my hands", zh:"洗手", pos:"片語",
+    kk:"/wɑʃ maɪ hændz/", cat:"個人清潔",
+    ex:"Wash your hands before eating.",
+    exzh:"吃飯前要洗手。"
+  },
+  {
+    en:"six o'clock", zh:"六點鐘", pos:"時間",
+    kk:"/sɪks əˈklɑk/", cat:"時間",
+    ex:"It is six o'clock.",
+    exzh:"現在是六點鐘。"
+  },
+  {
+    en:"seven o'clock", zh:"七點鐘", pos:"時間",
+    kk:"/ˈsɛvən əˈklɑk/", cat:"時間",
+    ex:"I get up at seven o'clock.",
+    exzh:"我七點鐘起床。"
+  },
+  {
+    en:"eight o'clock", zh:"八點鐘", pos:"時間",
+    kk:"/eɪt əˈklɑk/", cat:"時間",
+    ex:"It is eight o'clock now.",
+    exzh:"現在是八點鐘。"
+  },
+  {
+    en:"nine o'clock", zh:"九點鐘", pos:"時間",
+    kk:"/naɪn əˈklɑk/", cat:"時間",
+    ex:"I go to bed at nine o'clock.",
+    exzh:"我九點鐘去睡覺。"
+  },
+  {
+    en:"in the morning", zh:"在早上", pos:"片語",
+    kk:"/ɪn ðə ˈmɔrnɪŋ/", cat:"時間",
+    ex:"I exercise in the morning.",
+    exzh:"我早上運動。"
+  },
+  {
+    en:"in the afternoon", zh:"在下午", pos:"片語",
+    kk:"/ɪn ði ˌæftərˈnun/", cat:"時間",
+    ex:"I read in the afternoon.",
+    exzh:"我下午閱讀。"
+  },
+  {
+    en:"at night", zh:"在晚上", pos:"片語",
+    kk:"/æt naɪt/", cat:"時間",
+    ex:"I sleep well at night.",
+    exzh:"我晚上睡得很好。"
+  },
+  {
+    en:"early", zh:"早；提早", pos:"副詞",
+    kk:"/ˈɜrli/", cat:"時間",
+    ex:"I get up early.",
+    exzh:"我很早起床。"
+  },
+  {
+    en:"late", zh:"晚；遲", pos:"副詞",
+    kk:"/let/", cat:"時間",
+    ex:"Don't go to bed late.",
+    exzh:"不要太晚睡覺。"
+  },
+  {
+    en:"sleep", zh:"睡覺", pos:"動詞",
+    kk:"/slip/", cat:"日常作息",
+    ex:"I sleep for eight hours.",
+    exzh:"我睡八個小時。"
   }
-  return false;
- }
- if(!window.AUD_READY[k+"-words"])loadAudio();
- return false;
-}
-function loadAudio(){
- const k=(typeof acc!=="undefined"&&acc==="en-GB")?"uk":"us";
- const wf=k+"-words.js";
- if(!document.querySelector('script[data-aud="'+wf+'"]')){
-  const s=document.createElement("script");
-  s.src=wf;s.async=true;s.setAttribute("data-aud",wf);
-  s.onload=()=>{window.AUD_READY[wf]=true};
-  document.head.appendChild(s);
- }
- if(!document.querySelector('script[data-aud="sents-index.js"]')){
-  const s=document.createElement("script");
-  s.src="sents-index.js";s.async=true;s.setAttribute("data-aud","sents-index.js");
-  document.head.appendChild(s);
- }
-}
-loadAudio();
-</script>
-<script>
-const RAW=`fact|事實|n|fækt
-true|真實的|adj|tru
-essay|短文|n|ˈɛse
-envelope|信封|n|ˈɛnvəˌlop
-light|點燃|v|laɪt
-another|另一的|adj|əˈnʌðɚ
-volleyball|排球|n|ˈvɑlɪˌbɔl
-favorite|最喜愛的|adj|ˈfevərɪt
-championship|錦標賽/冠軍|n|ˈtʃæmpɪənˌʃɪp
-winner|優勝者|n|ˈwɪnɚ
-athlete|運動員|n|ˈæθlit
-turn|轉變成|v|tɝn
-central|中央的|adj|ˈsɛntrəl
-south|南方|n|saʊθ
-wedding|結婚典禮|n|ˈwɛdɪŋ
-celebration|慶祝|n|ˌsɛləˈbreʃən
-gather|聚集|v|ˈɡæðɚ
-reunion|團聚|n|riˈjunjən
-interesting|令人感到有趣的|adj|ˈɪntərɪstɪŋ
-traditional|傳統的|adj|trəˈdɪʃənl
-because|因為|conj|bɪˈkɔz
-village|村莊|n|ˈvɪlɪdʒ
-tiring|令人疲累的|adj|ˈtaɪrɪŋ
-surprised|感到驚訝的|adj|sɚˈpraɪzd
-entertaining|使人得到娛樂的|adj|ˌɛntɚˈtenɪŋ
-relaxing|令人輕鬆的|adj|rɪˈlæksɪŋ
-disappointing|令人失望的|adj|ˌdɪsəˈpɔɪntɪŋ
-amazed|感到驚奇的|adj|əˈmezd
-boring|令人無聊的|adj|ˈbɔrɪŋ
-youth|青春|n|juθ
-kick|踢|v|kɪk
-rubber|橡膠|n|ˈrʌbɚ
-across|橫越|prep|əˈkrɔs
-tag|標出|v|tæɡ
-bounce|拍(球)|v|baʊns
-cliff|懸崖|n|klɪf
-dark|深色的|adj|dɑrk
-stone|石頭|n|ston
-plain|平原|n|plen
-toss|拋/扔|v|tɔs
-land|降落/登陸|v|lænd
-balance|平衡|n|ˈbæləns
-whole|整個的|adj|hol
-canyon|峽谷|n|ˈkænjən
-stream|溪流|n|strim
-blind|盲的|adj|blaɪnd
-choose|選擇|v|tʃuz
-cover|覆蓋|v|ˈkʌvɚ
-step|步驟|n|stɛp
-underline|在…的下面劃線|v|ˌʌndɚˈlaɪn
-prefer|偏好|v|prɪˈfɝ
-preview|預習|n|ˈpriˌvju
-move|搬家|v|muv
-hard|困難的/費力的|adj|hɑrd
-still|仍然|adv|stɪl
-pack|裝(箱)|v|pæk
-compare|比較|v|kəmˈpɛr
-weather|天氣|n|ˈwɛðɚ
-neighbor|鄰居|n|ˈnebɚ
-surgeon|外科醫生|n|ˈsɝdʒən
-snowball|雪球|n|ˈsnoˌbɔl
-please|請|adv|pliz
-rake|把…耙在一起|v|rek
-classmate|同班同學|n|ˈklæsˌmet
-project|計畫|n|ˈprɑdʒɛkt
-event|事件|n|ɪˈvɛnt
-sew|縫製|v|so
-ability|能力|n|əˈbɪlətɪ
-lesson|課程|n|ˈlɛsn
-there|那裡|n|ðɛr
-such as|例如|phr|sʌtʃ æz
-belongings|擁有的物品|n|bəˈlɔŋɪŋz
-maybe|或許|adv|ˈmebi
-area|地區|n|ˈɛrɪə
-nearby|附近的|adj|ˈnɪrˌbaɪ
-perhaps|或許|adv|pɚˈhæps
-quarter|四分之一|n|ˈkwɔrtɚ
-half|一半|n|hæf
-immigrant|移民|n|ˈɪməɡrənt
-abroad|到國外|adv|əˈbrɔd
-service|服務|n|ˈsɝvɪs
-example|例子|n|ɪɡˈzæmpl
-suburb|郊區|n|ˈsʌbɝb
-space|空間|n|spes
-clinic|診所|n|ˈklɪnɪk
-university|大學|n|ˌjunəˈvɝsətɪ
-experience|經驗|n|ɪkˈspɪrɪəns
-lantern|燈籠|n|ˈlæntɚn
-sight|景象|n|saɪt
-secret|祕密的|adj|ˈsikrɪt
-fireworks|煙火|n|ˈfaɪɚˌwɝks
-following|接著的|adj|ˈfɑloɪŋ
-gold|金色的|adj|ɡold
-however|然而|conj|haʊˈɛvɚ
-language|語言|n|ˈlæŋɡwɪdʒ
-poetry|(總稱)詩|n|ˈpoɪtrɪ
-daughter|女兒|n|ˈdɔtɚ
-raisin|葡萄乾|n|ˈrezn
-leap|跳|v|lip
-encourage|鼓勵|v|ɪnˈkɝɪdʒ
-creative|有創造力的|adj|krɪˈetɪv
-award|獎|n|əˈwɔrd
-playwright|劇作家|n|ˈpleˌraɪt
-grasshopper|蚱蜢|n|ˈɡræsˌhɑpɚ
-cricket|蟋蟀|n|ˈkrɪkɪt
-butterfly|蝴蝶|n|ˈbʌtɚˌflaɪ
-ladybug|瓢蟲|n|ˈledɪˌbʌɡ
-feeler|觸鬚|n|ˈfilɚ
-wonder|想知道|v|ˈwʌndɚ
-dress|穿衣|v|drɛs
-notice|注意|v|ˈnotɪs
-past|經過|prep|pæst
-seem|似乎|v|sim
-continuous|連續的|adj|kənˈtɪnjuəs
-certain|特定的|adj|ˈsɝtn
-mind|精神/心|n|maɪnd
-beauty|美麗|n|ˈbjutɪ
-observe|觀察|v|əbˈzɝv
-letter|字母|n|ˈlɛtɚ
-rhyming|押韻的|adj|ˈraɪmɪŋ
-glitter|閃爍|v|ˈɡlɪtɚ
-snowflake|雪花|n|ˈsnoˌflek
-sentence|句子|n|ˈsɛntəns
-syllable|音節|n|ˈsɪləbl
-explain|解釋|v|ɪkˈsplen
-actor|男演員|n|ˈæktɚ
-stage|舞臺|n|stedʒ
-perform|演出|v|pɚˈfɔrm
-ambulance|救護車|n|ˈæmbjələns
-battery|電池|n|ˈbætərɪ
-label|標籤|n|ˈlebl
-title|標題|n|ˈtaɪtl
-movement|移動|n|ˈmuvmənt
-imaginary|想像中的|adj|ɪˈmædʒəˌnɛrɪ
-complete|完整的|adj|kəmˈplit
-divide|劃分|v|dɪˈvaɪd
-hour|小時|n|aʊr
-minute|分鐘|n|ˈmɪnɪt
-second|秒|n|ˈsɛkənd
-multiply|乘|v|ˈmʌltəˌplaɪ
-orbit|繞軌道運行|v|ˈɔrbɪt
-once|一次|adv|wʌns
-equal to|等於|phr|ˈikwəl tu
-accurate|準確的|adj|ˈækjərɪt
-apart|分開的|adj|əˈpɑrt
-calendar|日曆|n|ˈkæləndɚ
-allow|允許|v|əˈlaʊ
-tide|潮汐|n|taɪd
-billion|十億|n|ˈbɪljən
-explore|探索|v|ɪkˈsplɔr
-tomorrow|明天|n|təˈmɔro
-rise|上升|v|raɪz
-solution|解決方法|n|səˈluʃən
-fix|修理|v|fɪks
-business|商業/事業|n|ˈbɪznɪs
-notebook|筆記本|n|ˈnotˌbʊk
-passport|護照|n|ˈpæsˌpɔrt
-destination|目的地|n|ˌdɛstəˈneʃən
-airport|機場|n|ˈɛrˌpɔrt
-check|託運|v|tʃɛk
-while|當…的時候|conj|hwaɪl
-earache|耳痛|n|ˈɪrˌek
-in charge|負責|phr|ɪn tʃɑrdʒ
-ahead of|在…之前|phr|əˈhɛd əv
-continue|繼續|v|kənˈtɪnju
-headache|頭痛|n|ˈhɛdˌek
-washcloth|洗臉毛巾|n|ˈwɔʃˌklɔθ
-forehead|額頭|n|ˈfɔrˌhɛd
-sneeze|打噴嚏|v|sniz
-tissue|衛生紙|n|ˈtɪʃu
-ring|(鈴)響|v|rɪŋ
-announcement|公告|n|əˈnaʊnsmənt
-luggage|行李|n|ˈlʌɡɪdʒ
-power|動力|n|ˈpaʊɚ
-source|來源|n|sɔrs
-energy|能量|n|ˈɛnɚdʒɪ
-blade|葉片狀物|n|bled
-windmill|風車房|n|ˈwɪndˌmɪl
-electricity|電力|n|ɪˌlɛkˈtrɪsətɪ
-refrigerator|冰箱|n|rɪˈfrɪdʒəˌretɚ
-coal|煤|n|kol
-fossil|化石|n|ˈfɑsl
-fuel|燃料|n|ˈfjuəl
-million|百萬|n|ˈmɪljən
-plant|廠房|n|plænt
-pollution|污染|n|pəˈluʃən
-renewable|可再生的|adj|rɪˈnjuəbl
-modern|現代的|adj|ˈmɑdɚn
-hollow|中空的|adj|ˈhɑlo
-metal|金屬|n|ˈmɛtl
-instead of|而不是|phr|ɪnˈstɛd əv
-future|未來|n|ˈfjutʃɚ
-might|可能|aux|maɪt
-type|類型|n|taɪp
-electric|電動的|adj|ɪˈlɛktrɪk
-alternative|替代的|adj|ɔlˈtɝnətɪv
-express|表達|v|ɪkˈsprɛs
-certainty|確實|n|ˈsɝtntɪ
-possibility|可能性|n|ˌpɑsəˈbɪlətɪ
-solar|太陽的|adj|ˈsolɚ`;
-const SEN=`1-2|A fact is true.
-3|In this photo essay, we look at pictures and read about festivals, celebrations, and fun events around the world.
-4|Children often get money in red paper envelopes.
-5|Families light candles and decorate their homes with flowers.
-6-7|Another popular game is volleyball.
-8-9|People watch their favorite players at the World Cup scooter championships.
-10|The first team to reach a score of 25 is the winner.
-11|Almost every country in the world sends its best athletes to race and play in these games.
-12|When a girl turns 15 years old in Mexico, her family and friends often celebrate with food and dancing.
-13-14|This also happens in many parts of Central and South America.
-15-16|A wedding is always a big celebration.
-17|In Egypt, dancers and musicians gather around the married couple and dance for up to one hour.
-18|People celebrate family reunions all over the world. Aunts, uncles, cousins, and grandparents come together to eat and have fun.
-19-20|Health and Sports Day is an interesting traditional event in Japan.
-21|I was surprised, too, because I'm a very good, fast runner.
-22|In my village, we always have lots of exciting races and games.
-23|My race was very tiring.
-24|I am very surprised. I didn't know that about you.
-25|Their music is very entertaining. I feel very entertained.
-26|It's relaxing to sit in the sun and listen to music. I feel very relaxed.
-27|Losing a game is very disappointing. The children are disappointed when they didn't win.
-28|We were amazed by the magic.
-29|My friends think folk dancing is boring, but I think it is great.
-30|We watch traditional plays on Youth and Sports Day.
-31-32|Carlos kicks his red rubber ball so hard.
-33|Far across the world, Ashanti is playing Da Ga with her friends.
-34|She acts like a snake and tries to tag the next Da Ga.
-35|She bounces the ball as hard as she can.
-36|It flies over a forest, white cliffs, and a blue ocean.
-37|Hyo plays with little dark pebbles.
-38|Hyo is finding the perfect place to put his stone.
-39|It flies far into the sky, over plains and seas.
-40|Matias tosses a stone, and Maria jumps over it.
-41|She lands in the next box without stepping on the line.
-42|She puts her arms out to keep her balance.
-43|The whole family watches as the ball goes up and up until they can't see it anymore.
-44-45|The ball flies over lakes, canyons, and streams.
-46|A popular children's game in Mexico is The Blind Hen.
-47-48|You start by choosing one child to be the hen and covering their eyes so that they can't see.
-49|The next step is covering the child's eyes.
-50|Underline the words ending in -ing.
-51|I prefer playing ball games.
-52|A preview helps you know what will happen next.
-53-54|Moving is hard work.
-55|Mom and I are still unpacking boxes.
-56|She and I were packing them just eight weeks ago.
-57|It's very quiet compared to Mumbai.
-58|The weather in July is warm and sunny.
-59|Meeting neighbors isn't easy for me.
-60|Dad started his new job as a surgeon at the hospital.
-61|I threw snowballs.
-62|Please write soon!
-63|I rake leaves every Saturday in our yard.
-64|Emily is my neighbor and my classmate.
-65|Emily, Ashli, and Rachel are coming over on Sunday to work on our science project.
-66|What is the order of events?
-67|In those days, lots of people could crochet, knit, and sew.
-68|We use "can" and "could" to talk about ability.
-69|My grandma gave me knitting lessons.
-70|Moving from here to there!
-71|People move from rural areas to urban areas, such as cities, to get a job.
-72|Everyday people pack their belongings and move to new places.
-73-75|Maybe they came from a rural area, or from a nearby city or town.
-76|Perhaps they came from another country.
-77|In 1990, about a quarter of the people in China lived in cities.
-78|Today, over half of the Chinese people live in cities.
-79|Immigrants from Europe moved to Brazil to work in factories.
-80|People moved abroad to find new jobs and a better life.
-81|When another city has good services, people want to move there.
-82|For example, families want to live in a city with good hospitals and schools.
-83|Suburbs are near the outside of a city.
-84-85|Suburbs have more space for schools, hospitals, clinics, shopping malls, and zoos.
-86|Some students go to universities in another country.
-87|People often move to find new experiences and a better life.
-88-89|If there are lots of sky lanterns in the sky, it's an amazing sight.
-90|If someone finds a lantern, they sometimes get a secret message.
-91|Is it exciting when there's a big fireworks display?
-92|The following three poets come from two countries.
-93|The river is gold.
-94-95|However, the language they use is the same.
-96|He enjoys writing poetry.
-97|He and his daughter are eating.
-98|A raisin has escaped from the raisin jar.
-99|It is leaping in the air like a kangaroo.
-100-101|His poem "Colour" encourages children to be creative.
-102-103|She was an award-winning poet, writer, and playwright.
-104|Do you like grasshoppers and beetles?
-105|The crickets in the thickets.
-106-108|Butterflies, ladybugs, and bees don't smell with little noses but with feelers.
-109|I wonder how they sneeze.
-110|I get up at night and dress by yellow candle-light.
-111|Do you notice how winter days are short and summer days are long?
-112|Hear the grown-up people's feet still going past me in the street.
-113|And does it not seem hard to you?
-114-115|Use the past continuous to talk about things that were happening at a certain time in the past.
-116|Poets choose words carefully to help readers see a picture in their minds.
-117|They want to share the beauty and joy of life.
-118|A good poet observes things carefully.
-119|Use each letter as the beginning of a new word.
-120|They don't have to be rhyming words.
-121|Her blond hair is glittering under the light.
-122|Tiny snowflakes kiss my nose.
-123|Write a sentence about the topic word.
-124|Haiku poems use an exact number of syllables in each line.
-125|When you describe something, you explain how it looks, sounds, or feels.
-126-128|I was in the park when I saw some actors on a stage. They were performing a play when I saw them.
-129-130|He tried to call the ambulance when his cell phone battery ran out.
-131-132|Notice their labels and titles.
-133|We learn how the movement of Earth helps us tell time.
-134|The Earth turns, or spins, on an imaginary line called axis.
-135|The time it takes for the Earth to make one complete turn is called a day.
-136-139|A day is divided into hours, minutes, and seconds.
-140|Multiply 24 hours by 60 minutes to get the answer.
-141|The Earth travels around, or orbits, the sun.
-142|The time it takes for the Earth to go around the sun once is called a year.
-143|One year is equal to 12 months, or just over 52 weeks.
-144|To be very accurate, it takes the Earth 365 days, 49 minutes, and 12 seconds to go around the sun.
-145|Each time zone is one hour apart from the next time zone.
-146|Thanks to clocks and calendars, we can measure time very easily.
-147|It is the movement of the Earth that really allows us to measure time.
-148|We will see the highest tides in the world there.
-149|100 billion tons of water will move into the bay.
-150|We'll hunt for fossils in the sand, and we will explore the caves.
-151|What day will it be tomorrow?
-152|The shadows will not be very long in the summer because the sun rises high in the sky in the summer.
-153-154|A solution is how a character fixes the problem.
-155|She packed for her business trip to Japan.
-156|Molly stood beside her with a notebook and a pencil.
-157|Do you have your passport, Mom?
-158|Your destination is Tokyo.
-159|You should be at the airport two hours early.
-160|Remember passengers can only check two bags.
-161|Please take good care of him while I'm gone.
-162|I have a bad earache. I think I'm sick.
-163|Mom put me in charge.
-164|Tokyo is sixteen hours ahead of Los Angeles.
-165|Molly's messages continued through the day.
-166|Now Dad has a headache and a fever.
-167-168|I also put a cold washcloth on his forehead.
-169-170|Dad has a cold now. He's sneezing a lot. I gave him lots of tissues.
-171|The doorbell didn't ring. The phone rang. Molly picked it up.
-172|What are the announcements about?
-173|They are not going to take a lot of luggage because they're going to carry their bags all the time.
-174|The kite, the pinwheel, and the seeds are all moved by wind power.
-175-176|Wind power is a source of energy.
-177-178|Wind turns the blades on a windmill.
-179|We can use wind power to make electricity.
-180|Electricity powers lights and refrigerators.
-181-183|Most of our energy comes from oil, natural gas, and coal. These energy sources are called fossil fuels.
-184|Fossil fuels are made from the remains of things that lived millions of years ago.
-185|A power plant burns coal to make electricity.
-186-187|Wind power is a clean source of energy. It doesn't cause pollution. We will not run out of wind. It is a renewable resource.
-188|Modern windmills called wind turbines make electricity.
-189-191|The tall part is usually hollow and made of metal instead of wood.
-192|Wind may be one important source of energy in the future.
-193|Energy from water and the sun might also help reduce our need for fossil fuels.
-194|A turbine looks different from the old type of windmill.
-195|Electric car might be the answer to this problem.
-196|One day, there may be more alternative energy to power electric cars, too.
-197-198|Which sentence express certainty? Which express uncertainty?
-199|Use may and might to talk about future possibility.
-200|We will put solar panels on our roofs.`;
-const ZH=`1-2|事實是真的。
-3|在這篇圖文短文中，我們欣賞圖片，並閱讀世界各地的節慶、慶祝活動和有趣的活動。
-4|孩子們常常收到紅包袋裡的錢。
-5|家家戶戶點燃蠟燭，並用花朵裝飾家裡。
-6-7|另一種受歡迎的比賽是排球。
-8-9|人們在世界盃滑板車錦標賽上觀看他們最喜愛的選手。
-10|最先得到 25 分的隊伍就是優勝者。
-11|世界上幾乎每個國家都派出最優秀的運動員，來參加這些運動會的賽跑和比賽。
-12|墨西哥的女孩滿 15 歲時，家人和朋友常會用美食和舞蹈來慶祝。
-13-14|這種情形也發生在中美洲和南美洲的許多地方。
-15-16|婚禮總是一場盛大的慶祝。
-17|在埃及，舞者和音樂家聚集在新婚夫妻身邊，跳舞長達一小時。
-18|世界各地的人都會慶祝家族團圓。阿姨、叔叔、堂表兄弟姊妹和祖父母聚在一起吃飯、玩樂。
-19-20|健康運動日是日本一項有趣的傳統活動。
-21|我也很驚訝，因為我是個跑得很快的好跑者。
-22|在我的村莊，我們總是有很多刺激的賽跑和遊戲。
-23|我的比賽讓人非常疲累。
-24|我非常驚訝。我不知道關於你的這件事。
-25|他們的音樂很有娛樂性。我覺得很愉快。
-26|坐在陽光下聽音樂很令人放鬆。我覺得非常輕鬆。
-27|輸掉比賽讓人很失望。孩子們沒贏的時候很失望。
-28|我們對魔術感到驚奇。
-29|我的朋友覺得民俗舞蹈很無聊，但我覺得它很棒。
-30|我們在青年運動日觀賞傳統戲劇。
-31-32|卡洛斯用力踢他的紅色橡膠球。
-33|在遙遠的世界另一端，阿山蒂正和朋友玩 Da Ga。
-34|她表現得像條蛇，試著標記下一個 Da Ga。
-35|她盡全力拍球。
-36|它飛越森林、白色的懸崖和藍色的海洋。
-37|Hyo 玩著小小的深色鵝卵石。
-38|Hyo 正在尋找最完美的地方來放他的石頭。
-39|它飛向遠方的天空，越過平原和海洋。
-40|馬蒂亞斯丟出一顆石頭，瑪麗亞跳過它。
-41|她落在下一格，沒有踩到線。
-42|她把手臂伸出去保持平衡。
-43|全家人看著球越飛越高，直到再也看不見。
-44-45|球飛越湖泊、峽谷和溪流。
-46|墨西哥一個受歡迎的兒童遊戲是「盲眼母雞」。
-47-48|一開始先選一個孩子當母雞，並蒙住他的眼睛，讓他看不見。
-49|下一步是蒙住孩子的眼睛。
-50|在以 -ing 結尾的字下面劃線。
-51|我比較喜歡玩球類遊戲。
-52|預習能幫助你知道接下來會發生什麼事。
-53-54|搬家是件辛苦的事。
-55|媽媽和我還在拆箱子。
-56|才八個星期前，她和我還在打包這些東西。
-57|跟孟買比起來，這裡非常安靜。
-58|七月的天氣溫暖而晴朗。
-59|認識鄰居對我來說不容易。
-60|爸爸在醫院開始了他當外科醫生的新工作。
-61|我丟了雪球。
-62|請儘快寫信給我！
-63|我每個星期六都在院子裡耙落葉。
-64|艾蜜莉是我的鄰居，也是我的同班同學。
-65|艾蜜莉、艾許莉和瑞秋星期天要來我家一起做我們的自然科學專題。
-66|事件的先後順序是什麼？
-67|在那個年代，很多人會鉤織、編織和縫紉。
-68|我們用 "can" 和 "could" 來談論能力。
-69|我奶奶給我上編織課。
-70|從這裡搬到那裡！
-71|人們為了找工作，從鄉村地區搬到都市地區，例如城市。
-72|一般人打包他們的物品，搬到新的地方。
-73-75|也許他們來自鄉村地區，或是來自附近的城市或城鎮。
-76|或許他們來自另一個國家。
-77|1990 年，中國大約有四分之一的人口住在城市。
-78|現在，超過一半的中國人住在城市。
-79|來自歐洲的移民搬到巴西，到工廠工作。
-80|人們搬到國外去尋找新工作和更好的生活。
-81|當另一個城市有良好的服務時，人們就想搬到那裡。
-82|例如，家庭想住在有好醫院和好學校的城市。
-83|郊區靠近城市的外圍。
-84-85|郊區有更多空間可以蓋學校、醫院、診所、購物中心和動物園。
-86|有些學生到另一個國家上大學。
-87|人們常常為了尋找新的經驗和更好的生活而搬家。
-88-89|如果天空中有很多天燈，那是令人驚豔的景象。
-90|如果有人發現天燈，有時會得到一則祕密訊息。
-91|有盛大的煙火表演時，是不是很令人興奮？
-92|接下來這三位詩人來自兩個國家。
-93|這條河是金色的。
-94-95|然而，他們使用的語言是一樣的。
-96|他喜歡寫詩。
-97|他和他的女兒正在吃東西。
-98|一顆葡萄乾從葡萄乾罐子裡逃出來了。
-99|它在空中跳躍，就像袋鼠一樣。
-100-101|他的詩〈Colour〉鼓勵孩子們發揮創意。
-102-103|她是一位得過獎的詩人、作家和劇作家。
-104|你喜歡蚱蜢和甲蟲嗎？
-105|灌木叢裡的蟋蟀。
-106-108|蝴蝶、瓢蟲和蜜蜂靠觸鬚聞氣味，牠們沒有小鼻子。
-109|我好奇它們怎麼打噴嚏。
-110|我在夜裡起床，藉著黃色的燭光穿衣服。
-111|你有沒有注意到冬天的白天很短，夏天的白天很長？
-112|聽見大人們的腳步聲，還在街上從我身旁走過。
-113|你不覺得這很難熬嗎？
-114-115|用過去進行式來談論過去某個特定時間正在發生的事。
-116|詩人謹慎地選擇文字，幫助讀者在腦海中看見畫面。
-117|他們想分享生命的美麗與喜悅。
-118|優秀的詩人會仔細觀察事物。
-119|用每個字母作為一個新單字的開頭。
-120|它們不一定要是押韻的字。
-121|她的金髮在燈光下閃閃發亮。
-122|小小的雪花親吻我的鼻子。
-123|寫一個關於主題字的句子。
-124|俳句的每一行都使用精確數量的音節。
-125|當你描述某樣東西時，你要解釋它看起來、聽起來或感覺起來是什麼樣子。
-126-128|我在公園時，看到一些演員在舞臺上。他們正在演出一齣戲的時候，我看到了他們。
-129-130|他想叫救護車的時候，手機電池剛好沒電了。
-131-132|注意它們的標籤和標題。
-133|我們學習地球的運動如何幫助我們判斷時間。
-134|地球繞著一條叫做地軸的想像線轉動，也就是自轉。
-135|地球轉完一整圈所需的時間叫做一天。
-136-139|一天被分成小時、分鐘和秒。
-140|把 24 小時乘以 60 分鐘，就能得到答案。
-141|地球繞著太陽運行，也就是公轉。
-142|地球繞太陽一圈所需的時間叫做一年。
-143|一年等於 12 個月，或是剛好超過 52 週。
-144|說得非常精確一點，地球繞太陽一圈需要 365 天 49 分又 12 秒。
-145|每個時區和下一個時區相差一小時。
-146|多虧有時鐘和日曆，我們才能很輕鬆地測量時間。
-147|地球的運動讓我們得以測量時間。
-148|我們會在那裡看到世界上最高的潮水。
-149|一千億噸的水將湧進海灣。
-150|我們要在沙地裡尋找化石，也要去探索洞穴。
-151|明天是星期幾？
-152|夏天的影子不會很長，因為夏天太陽在天空中升得很高。
-153-154|解決方法就是故事角色如何解決問題。
-155|她為了去日本出差而打包行李。
-156|茉莉拿著筆記本和鉛筆站在她身旁。
-157|媽媽，你有帶護照嗎？
-158|你的目的地是東京。
-159|你應該提早兩小時到機場。
-160|記住，乘客只能託運兩件行李。
-161|我不在的時候，請好好照顧他。
-162|我的耳朵很痛。我想我生病了。
-163|媽媽讓我負責。
-164|東京比洛杉磯快十六小時。
-165|茉莉的訊息一整天都持續傳來。
-166|現在爸爸頭痛又發燒了。
-167-168|我還把一條冷毛巾放在他的額頭上。
-169-170|爸爸現在感冒了。他一直打噴嚏。我給了他很多衛生紙。
-171|門鈴沒有響。電話響了。茉莉接起了電話。
-172|這些公告是關於什麼的？
-173|他們不打算帶很多行李，因為他們要一直自己提著袋子。
-174|風箏、風車和種子都是靠風力移動的。
-175-176|風力是一種能量的來源。
-177-178|風使風車房的葉片轉動。
-179|我們可以利用風力來發電。
-180|電力供給燈和冰箱。
-181-183|我們大部分的能源來自石油、天然氣和煤。這些能源叫做化石燃料。
-184|化石燃料是由生活在數百萬年前的生物遺骸形成的。
-185|發電廠燒煤來發電。
-186-187|風力是一種乾淨的能源。它不會造成污染。我們不會用光風。它是可再生資源。
-188|稱為風力渦輪機的現代風車能發電。
-189-191|高高的部分通常是中空的，而且是用金屬而不是木頭做的。
-192|風可能是未來一項重要的能源。
-193|來自水和太陽的能源，也可能有助於減少我們對化石燃料的需求。
-194|渦輪機看起來和舊式的風車不一樣。
-195|電動車可能是這個問題的答案。
-196|有一天，可能會有更多替代能源來驅動電動車。
-197-198|哪個句子表達確定？哪個表達不確定？
-199|用 may 和 might 來談論未來的可能性。
-200|我們會把太陽能板裝在屋頂上。`;
-const W=RAW.split("\n").map((l,i)=>{const a=l.split("|");return{n:i+1,w:a[0],z:a[1],p:a[2],k:a[3]}});
-SEN.split("\n").forEach(l=>{const[r,t]=l.split("|"),[a,b]=r.split("-").map(Number);for(let i=a;i<=(b||a);i++)W[i-1].s=t});
-ZH.split("\n").forEach(l=>{const[r,t]=l.split("|"),[a,b]=r.split("-").map(Number);for(let i=a;i<=(b||a);i++)W[i-1].sz=t});
-const $=id=>document.getElementById(id),L=$("list");
-let seq=0,acc="en-US",cur=null,shown=[];const sel=new Set();
-const cnt=()=>$("pd").textContent="匯出PDF（"+sel.size+"）";
-const rg=$("rg");rg.innerHTML='<option value="0">全部 1–200</option>'+[0,1,2,3].map(i=>`<option value="${i*50+1}">${i*50+1}–${i*50+50}</option>`).join("");
-function render(){
- const s=rg.value*1,q=$("q").value.trim().toLowerCase();
- const d=W.filter(x=>(!s||(x.n>=s&&x.n<s+50))&&(!q||x.w.includes(q)||x.z.includes(q)));
- shown=d;
- L.innerHTML=d.map(x=>`<div class="cw"><button class="card" data-w="${x.w}"><span class="n">${x.n}</span><div class="w">${x.w}<span class="p">${x.p}.</span></div><div class="k">/${x.k}/</div><div class="z">${x.z}</div><div class="s" data-i="${x.n}">🔊 ${x.s}<span class="sz">${x.sz}</span></div></button><label class="ck" title="加入PDF"><input type="checkbox" data-n="${x.n}" aria-label="選取 ${x.w}"${sel.has(x.n)?" checked":""}></label></div>`).join("")||"<p>找不到符合的單字</p>";
- cnt();
-}
-function cands(){
- const m=x=>x.lang.replace("_","-")===acc,v=speechSynthesis.getVoices().filter(m);
- return [...v.filter(x=>x.localService),...v.filter(x=>!x.localService),null];
-}
-let U=null;
-function say(t,el,k=0,tk){
- if(tk===undefined){
-  if(playing&&t===curText)return;
-  tk=++seq;
-  curText=t;playing=true;
- }
- if(playClip(t,el,tk))return;
- if(!("speechSynthesis" in window)){playing=false;$("msg").textContent="這個瀏覽器不支援語音朗讀，請改用 Chrome、Safari 或 Edge（不要在 LINE、FB 內建瀏覽器開）。";return}
- const ss=speechSynthesis;ss.cancel();ss.resume();
- if(cur&&cur!==el)cur.classList.remove("on");cur=el;el.classList.add("on");
- setTimeout(()=>{
-  if(tk!==seq)return;
-  curText=t;playing=true;
-  const c=cands(),v=c[Math.min(k,c.length-1)],u=new SpeechSynthesisUtterance(t);U=u;
-  u.lang=acc;if(v)u.voice=v;u.rate=+$("sp").value;u.volume=1;
-  u.onend=()=>{if(tk===seq){el.classList.remove("on");if(curText===t)playing=false}};
-  u.onerror=e=>{
-   if(e.error==="canceled"||e.error==="interrupted"||tk!==seq)return;
-   if(k<c.length-1){say(t,el,k+1,tk);return}
-   el.classList.remove("on");if(curText===t)playing=false;$("msg").textContent="語音播放失敗（"+e.error+"）。請確認音量未靜音，並到系統設定安裝英文語音。";
-  };
-  ss.speak(u);
-  $("msg").textContent=v?"":"找不到"+(acc=="en-US"?"美式":"英式")+"語音，改用裝置預設語音。";
- },60);
-}
-L.addEventListener("click",e=>{const c=e.target.closest(".card");if(!c)return;const q=e.target.closest(".s");say(q?W[q.dataset.i-1].s:c.dataset.w,c)});
-[["us","en-US"],["uk","en-GB"]].forEach(([id,l])=>$(id).onclick=()=>{acc=l;loadAudio();$("us").setAttribute("aria-pressed",l=="en-US");$("uk").setAttribute("aria-pressed",l=="en-GB")});
-$("zh").onchange=e=>document.body.classList.toggle("nozh",!e.target.checked);
-$("se").onchange=e=>document.body.classList.toggle("nose",!e.target.checked);
-$("kk").onchange=e=>document.body.classList.toggle("nokk",!e.target.checked);
-L.addEventListener("change",e=>{const n=+e.target.dataset.n;if(!n)return;e.target.checked?sel.add(n):sel.delete(n);cnt()});
-$("sa").onclick=()=>{shown.forEach(x=>sel.add(x.n));render()};
-$("sall").onclick=()=>{W.forEach(x=>sel.add(x.n));render();$("msg").textContent="已全選 200 字。"};
-function rng(add){
- let a=parseInt($("ra").value),b=parseInt($("rb").value);
- if(isNaN(a)&&isNaN(b)){$("msg").textContent="請輸入起始與結束編號，例如 51 到 80。";return}
- if(isNaN(a))a=b;if(isNaN(b))b=a;
- if(a>b)[a,b]=[b,a];a=Math.max(1,a);b=Math.min(200,b);
- let c=0;for(let i=a;i<=b;i++){if(add&&!sel.has(i)){sel.add(i);c++}if(!add&&sel.has(i)){sel.delete(i);c++}}
- if(add){rg.value="0";$("q").value=""}
- render();
- $("msg").textContent=(add?"已加入 ":"已取消 ")+c+" 字（"+a+"–"+b+"），目前共選 "+sel.size+" 字。";
-}
-$("radd").onclick=()=>rng(true);$("rdel").onclick=()=>rng(false);
-$("sc").onclick=()=>{sel.clear();render()};
-function printPdf(){
- if(!sel.size){$("msg").textContent="請先勾選要匯出的單字，或按「全選目前範圍」。";return}
- const z=$("pz").checked,t=$("ps").checked,d=W.filter(x=>sel.has(x.n));
- $("pv").innerHTML=`<h2>G4 Advanced M11/M12 單字複習</h2><p>共 ${d.length} 字</p><table><tr><th>#</th><th>Word</th><th>KK</th><th>詞性</th>${z?"<th>中文</th>":""}${t?"<th>Example Sentence</th>":""}</tr>${d.map(x=>`<tr><td>${x.n}</td><td><b>${x.w}</b></td><td class="kk">/${x.k}/</td><td>${x.p}.</td>${z?`<td>${x.z}</td>`:""}${t?`<td>${x.s}${z?`<br>${x.sz}`:""}</td>`:""}</tr>`).join("")}</table>`;
- $("msg").textContent="在列印視窗中，將目的地選為「另存為 PDF」。";
- window.print();
-}
-$("pd").onclick=async()=>{
- if(!sel.size){$("msg").textContent="請先勾選要匯出的單字，或按「全選目前範圍」。";return}
- if(!window.html2canvas||!window.jspdf){printPdf();return}
- const z=$("pz").checked,t=$("ps").checked,d=W.filter(x=>sel.has(x.n)),btn=$("pd"),lab=btn.textContent;
- btn.disabled=true;$("msg").textContent="產生 PDF 中，請稍候…";
- const host=document.createElement("div");host.className="pvh";document.body.appendChild(host);
- const head="<tr><th>#</th><th>Word</th><th>KK</th><th>詞性</th>"+(z?"<th>中文</th>":"")+(t?"<th>Example Sentence</th>":"")+"</tr>";
- const row=x=>`<tr><td>${x.n}</td><td><b>${x.w}</b></td><td class="kk">/${x.k}/</td><td>${x.p}.</td>${z?`<td>${x.z}</td>`:""}${t?`<td>${x.s}${z?`<br>${x.sz}`:""}</td>`:""}</tr>`;
- const pages=[];
- const mk=first=>{const g=document.createElement("div");g.className="pg";g.innerHTML=(first?`<h2>G4 Advanced M11/M12 單字複習</h2><p>共 ${d.length} 字</p>`:"")+"<table>"+head+"</table>";host.appendChild(g);pages.push(g);return g};
- try{
-  let g=mk(true),tb=g.querySelector("table");
-  d.forEach(x=>{
-   tb.insertAdjacentHTML("beforeend",row(x));
-   if(tb.offsetTop+tb.offsetHeight>1123-40&&tb.rows.length>2){
-    tb.deleteRow(-1);g=mk(false);tb=g.querySelector("table");tb.insertAdjacentHTML("beforeend",row(x));
-   }
-  });
-  const doc=new window.jspdf.jsPDF({unit:"mm",format:"a4"});
-  for(let i=0;i<pages.length;i++){
-   $("msg").textContent="產生 PDF 中… "+(i+1)+"/"+pages.length;
-   const c=await html2canvas(pages[i],{scale:1.6,backgroundColor:"#ffffff"});
-   if(i)doc.addPage();
-   doc.addImage(c.toDataURL("image/jpeg",.9),"JPEG",0,0,210,297);
+];
+
+const grid = document.getElementById("wordList");
+const search = document.getElementById("search");
+const category = document.getElementById("category");
+const summary = document.getElementById("summary");
+const empty = document.getElementById("empty");
+
+function speak(text) {
+  if (!("speechSynthesis" in window)) {
+    alert("目前瀏覽器不支援英文朗讀，請改用 Safari 或 Chrome。");
+    return;
   }
-  doc.save("G4-M11-M12-vocab.pdf");
-  $("msg").textContent="PDF 已產生（共 "+pages.length+" 頁）。如果沒有自動下載，請到瀏覽器的下載項目或分享選單查看。";
- }catch(e){
-  $("msg").textContent="直接產生 PDF 失敗，改用列印功能。";printPdf();
- }finally{host.remove();btn.disabled=false;btn.textContent=lab}
-};
-rg.onchange=render;$("q").oninput=render;
-if("speechSynthesis" in window){speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=()=>{}}
+  window.speechSynthesis.cancel();
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.lang = "en-US";
+  speech.rate = 0.85;
+  window.speechSynthesis.speak(speech);
+}
+
+function makeCard(w, index) {
+  const card = document.createElement("article");
+  card.className = "card";
+
+  const number = document.createElement("div");
+  number.className = "number";
+  number.textContent = `第 ${index + 1} 個 · ${w.cat}`;
+
+  const word = document.createElement("div");
+  word.className = "word";
+  word.textContent = w.en;
+
+  const chinese = document.createElement("div");
+  chinese.className = "chinese";
+  chinese.textContent = w.zh;
+
+  const meta = document.createElement("div");
+  meta.className = "meta";
+  meta.textContent = `${w.pos}　KK：${w.kk}`;
+
+  const example = document.createElement("div");
+  example.className = "example";
+
+  const exampleEn = document.createElement("div");
+  exampleEn.className = "example-en";
+  exampleEn.textContent = w.ex;
+
+  const exampleZh = document.createElement("div");
+  exampleZh.className = "example-zh";
+  exampleZh.textContent = w.exzh;
+
+  example.append(exampleEn, exampleZh);
+
+  const actions = document.createElement("div");
+  actions.className = "actions";
+
+  const wordButton = document.createElement("button");
+  wordButton.textContent = "🔊 聽單字";
+  wordButton.addEventListener("click", () => speak(w.en));
+
+  const sentenceButton = document.createElement("button");
+  sentenceButton.className = "secondary";
+  sentenceButton.textContent = "🔊 聽例句";
+  sentenceButton.addEventListener("click", () => speak(w.ex));
+
+  actions.append(wordButton, sentenceButton);
+  card.append(number, word, chinese, meta, example, actions);
+  return card;
+}
+
+function render() {
+  const q = search.value.trim().toLowerCase();
+  let list = WORDS.filter(w =>
+    (!q || `${w.en} ${w.zh} ${w.pos} ${w.cat} ${w.ex}`.toLowerCase().includes(q)) &&
+    (!category.value || w.cat === category.value)
+  );
+
+  grid.replaceChildren();
+  list.forEach((w) => grid.appendChild(makeCard(w, WORDS.indexOf(w))));
+  summary.textContent = `顯示 ${list.length} 個，共 ${WORDS.length} 個單字與片語`;
+  empty.classList.toggle("hidden", list.length > 0);
+}
+
+search.addEventListener("input", render);
+category.addEventListener("change", render);
+document.getElementById("reset").addEventListener("click", () => {
+  search.value = "";
+  category.value = "";
+  render();
+});
+
 render();
-</script></body></html>
+</script>
+</body>
+</html>
